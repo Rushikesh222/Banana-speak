@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,700&family=Roboto:ital,wght@1,700&display=swap");
+:root {
+  ---primary-color: rgb(233, 229, 30);
+  ---drak-gray: #6b728a;
+  ---white-off: #dae3fd;
+}
+
+body {
+  background-color: white;
+  font-family: "Mulish", sans-serif;
+}
+.navigation {
+  background-color: var(---primary-color);
+  color: black;
+  padding: 4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.txt-input {
+  width: 80%;
+  height: 10vh;
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+}
+.footer {
+  margin-top: 35rem;
+  background-color: var(---primary-color);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: black;
+  border-top-right-radius: 1rem;
+}
