@@ -12,13 +12,15 @@ function errorHandler(error) {
 }
 
 function clickEventHandler() {
-  const inputText = txtInput.value;
+  const inputText = txtInput.value; //taking input
+
+  //calling server for processing
   fetch(getTranslationURL(inputText))
     .then((response) => response.json())
     .then((json) => {
       const translatetext = json.contents.translated;
       Output.innerText = translatetext;
-    })
+    }) //output
     .catch(errorHandler);
 }
 
